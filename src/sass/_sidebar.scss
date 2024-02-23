@@ -1,0 +1,123 @@
+// ----------------------------------------
+// Start: Sidebar Styles
+// ----------------------------------------
+.app-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    // left: -300px;
+    left: 0;
+    width: 300px;
+    min-height: 100vh;
+    z-index: 2;
+    background-color: var(--sidebar-bg);
+    transition: all 0.1s ease;
+    &__top {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 70px;
+        padding: 18px 20px;
+        border-bottom: 1px solid #1f212a;
+        .brand-logo{
+            img {
+                width: 130px;
+            }
+        }
+        .sidebar-toggler {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            transform: translateY(-50%);
+            border-radius: 2px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            >i {
+                color: #9191B7;
+                display: block;
+                transition: all 0.25s linear;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: var(--color-white);
+            }
+        }
+    }
+    &__content {
+        padding: 20px 10px;
+    }
+    &__menu {
+        margin-bottom: 15px;
+        &-title {
+            padding: 12px;
+            h6 {
+                font-size: 12px;
+                font-weight: 500;
+                color: var(--sidebar-menu-title);
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+        .menu-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            svg {
+                color: var(--sidebar-menu-icon);
+            }
+        }
+        .menu-label {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--sidebar-menu-label);
+        }
+        &-item {
+            padding: 8px 12px;
+            margin: 2px 0;
+            white-space: nowrap;
+            cursor: pointer;
+            &:hover {
+                border-radius: 4px;
+                background-color: var(--sidebar-menu-active-item);
+                .menu-icon svg,.menu-label {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+    .menu-divider {
+        height: 1px;
+        width: 100%;
+        margin: 16px 0;
+        border-top: 1px solid #1f212a;
+    }
+    &.sidebar-collapsed {
+        width: 70px;
+        .app-sidebar__top {
+            .brand-logo {
+                display: none;
+            }
+        }
+        .app-sidebar__menu {
+            &-title {
+                visibility: hidden;
+            }
+            .menu-label {
+                display: none;
+            }
+        }
+    }
+}
+
+// ----------------------------------------
+// End: Sidebar Styles
+// ----------------------------------------

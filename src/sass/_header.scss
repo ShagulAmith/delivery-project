@@ -1,0 +1,127 @@
+// ----------------------------------------
+// Start: Header Styles
+// ----------------------------------------
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    right: 0;
+    height: 70px;
+    background-color: var(--color-white);
+    z-index: 2;
+    transition: all 0.1s ease;
+    .navbar {
+        padding: 0;
+        height: 70px;
+    }
+    .navbar-brand {
+        display: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--color-white);
+    }
+    .sidebar-toggler {
+        &:hover,
+        &:focus
+        &:active {
+            background-color: rgba( 0, 0, 0, 0.15);
+        }
+    }
+    &__brand {
+        position: relative;
+        width: 300px;
+        height: 70px;
+        color: var(--color-white);
+        padding: 18px 20px;
+        background-color: var(--color-dark);
+        &:after {
+            content: '';
+            width: calc(100% - 20px);
+            height: 1px;
+            border-bottom: 1px dashed #414141;
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+    }
+    &__main {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        padding: 0 40px;
+        height: 70px;
+        border-bottom: 1px solid #f1f1f1;
+        background-color: var(--color-white);
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        .sidebar-toggler {
+            margin-right: 10px;
+        }
+    }
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+    }
+    .user-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-dark);
+        margin-left: 8px;
+    }
+}
+.icon_dock-to-left,.icon_dock-to-right {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+.icon_dock-to-left {
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC4zNSI+CjxwYXRoIGQ9Ik01IDIxQzQuNDUgMjEgMy45NzkxNyAyMC44MDQyIDMuNTg3NSAyMC40MTI1QzMuMTk1ODMgMjAuMDIwOCAzIDE5LjU1IDMgMTlWNUMzIDQuNDUgMy4xOTU4MyAzLjk3OTE3IDMuNTg3NSAzLjU4NzVDMy45NzkxNyAzLjE5NTgzIDQuNDUgMyA1IDNIMTlDMTkuNTUgMyAyMC4wMjA4IDMuMTk1ODMgMjAuNDEyNSAzLjU4NzVDMjAuODA0MiAzLjk3OTE3IDIxIDQuNDUgMjEgNVYxOUMyMSAxOS41NSAyMC44MDQyIDIwLjAyMDggMjAuNDEyNSAyMC40MTI1QzIwLjAyMDggMjAuODA0MiAxOS41NSAyMSAxOSAyMUg1Wk0xNCAxOVY1SDVWMTlIMTRaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+Cjwvc3ZnPgo=') center center no-repeat;
+    background-size: 24px auto;
+}
+.icon_dock-to-right {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4NCiAgPGcgaWQ9Imljb25fZG9jay10by1yaWdodCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE2IC02ODUpIj4NCiAgICA8ZyBpZD0iaWNvbl9kb2NrX3RvX2xlZnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMTMgNjg4KSIgb3BhY2l0eT0iMC4zNSI+DQogICAgICA8cGF0aCBpZD0iUGF0aF8xIiBkYXRhLW5hbWU9IlBhdGggMSIgZD0iTTE5LDIxYTIuMDA2LDIuMDA2LDAsMCwwLDItMlY1YTIuMDA2LDIuMDA2LDAsMCwwLTItMkg1QTIuMDA2LDIuMDA2LDAsMCwwLDMsNVYxOWEyLjAwNiwyLjAwNiwwLDAsMCwyLDJabS05LTJWNWg5VjE5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+DQogICAgPC9nPg0KICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfMyIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjE2IDY4NSkiIGZpbGw9Im5vbmUiLz4NCiAgPC9nPg0KPC9zdmc+DQo=') center center no-repeat;
+    background-size: 24px auto;
+}
+.dropdown {
+    &-toggle {
+        &.show,&:active,&:focus {
+            border: none;
+        }
+    }
+    &-menu {
+        padding: 20px 10px;
+        border: 0;
+        box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #484848;
+        border-radius: 4px;
+        padding: 8px 16px;
+        > i {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--color-dark);
+            background-color: rgba(249, 249, 249, 0.75);
+        }
+        &.active {
+            color: #3E97FF;
+            background-color: #F9F9F9;
+        }
+    }
+}
+// ----------------------------------------
+// End: Header Styles
+// ----------------------------------------

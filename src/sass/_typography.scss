@@ -1,0 +1,104 @@
+/* Poppins Webfont */
+// @import url('../../assets/fonts/poppins/https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+// font-family: 'Poppins', sans-serif;
+
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('../assets/fonts/poppins/Poppins-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Poppins Light'), url('../assets/fonts/poppins/Poppins-Light.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), url('../assets/fonts/poppins/Poppins-Medium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), url('../assets/fonts/poppins/Poppins-SemiBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), url('../assets/fonts/poppins/Poppins-Bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Poppins ExtraBold'), url('../assets/fonts/poppins/Poppins-ExtraBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Poppins Black'), url('../assets/fonts/poppins/Poppins-Black.woff') format('woff');
+  }
+  
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; }
+  
+  h1 {
+    font-size: 36px; }
+  
+  h2 {
+    font-size: 30px; }
+  
+  h3 {
+    font-size: 24px; }
+  
+  h4 {
+    font-size: 18px; }
+  
+  h5 {
+    font-size: 14px; }
+  
+  h6 {
+    font-size: 12px; }
+  
+  
+  // .fa {
+  //   width: 24px;
+  //   height: 24px;
+  //   padding: 3px 0;
+  //   text-align: center;
+  //   font-size: 16px;
+  // }
+  
+  
+  // [class*=" fa-"]:not(.fa-stack), 
+  // [class*=" glyphicon-"], 
+  // [class*=" icon-"], 
+  // [class^=fa-]:not(.fa-stack), 
+  // [class^=glyphicon-], [class^=icon-] {
+  //   display: inline-block;
+  //   line-height: 14px;
+  //   -webkit-font-smoothing: antialiased;
+  // }
+  
+  
+  // Font size 
+  .f-16 {
+    font-size: 16px !important;
+  }
+  .lh-20 {
+    line-height: 20px !important;
+  }
